@@ -1,6 +1,6 @@
 /* iCheck plugin skins
 ----------------------------------- */
-@import url("template/minimal/all");
+@import url("template/minimal/all.css");
 /*
 @import url("template/minimal/minimal.css");
 @import url("template/minimal/red.css");
@@ -14,7 +14,7 @@
 @import url("template/minimal/purple.css");
 */
 
-@import url("template/square/all");
+@import url("template/square/all.css");
 /*
 @import url("template/square/square.css");
 @import url("template/square/red.css");
@@ -28,7 +28,7 @@
 @import url("template/square/purple.css");
 */
 
-@import url("template/flat/all");
+@import url("template/flat/all.css");
 /*
 @import url("template/flat/flat.css");
 @import url("template/flat/red.css");
@@ -42,7 +42,7 @@
 @import url("template/flat/purple.css");
 */
 
-@import url("template/line/all");
+@import url("template/line/all.css");
 /*
 @import url("template/line/line.css");
 @import url("template/line/red.css");
@@ -56,6 +56,6 @@
 @import url("template/line/purple.css");
 */
 
-@import url("template/polaris/polaris");
+@import url("template/polaris/polaris.css");
 
-@import url("template/futurico/futurico");
+@import url("template/futurico/futurico.css");
