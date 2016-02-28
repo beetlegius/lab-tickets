@@ -1,0 +1,22 @@
+<tr id="issue_<%= issue.id %>">
+  <td>#<%= issue.id.to_s.rjust(3, '0') %></td>
+  <td><%= issue.name %></td>
+  <td><%= issue.subtask.name %></td>
+  <td>
+    <div class="pull-right">
+      <%= link_to 'Editar', [:edit, issue], class: 'btn btn-xs btn-info' %>
+      <div class="btn-group btn-group-xs">
+        <button type="button" data-toggle="dropdown" class="btn btn-xs btn-primary dropdown-toggle">
+          Status &nbsp;<span class="caret"></span>
+        </button>
+        <ul role="menu" class="dropdown-menu">
+          <% Issue::STATUSES.each do |status| %>
+            <li><%= link_to status.humanize, url_for([status, issue]), method: :patch, remote: true %></li>
+          <% end %>
+        </ul>
+      </div>
+      <%= link_to 'Eliminar', issue, data: { method: :delete, remote: true }, class: 'btn btn-xs btn-danger' %>
+    </div>
+    <span class="label label-sm label-<%= issue.label %>"><%= issue.status %></span>
+  </td>
+</tr>

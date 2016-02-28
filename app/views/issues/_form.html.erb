@@ -1,0 +1,19 @@
+<%= form_for issue, remote: remote do |f| %>
+  <div class="form-body pal">
+    <div class="form-group">
+      <div class="input-icon">
+        <%= fa_icon :comment %>
+        <%= f.text_field :name, autofocus: true, placeholder: 'Issue description', class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.select :subtask_id, Subtask.all.map { |subtask| [subtask.name, subtask.id] }, { include_blank: 'Select a subtask' }, { class: 'form-control' } %>
+    </div>
+    <div class="form-group">
+      <%= f.select :status, Issue::STATUSES.map { |status| [status.humanize, status] }, { prompt: true }, { class: 'form-control' } %>
+    </div>
+  </div>
+  <div class="form-actions text-right pal">
+    <button type="submit" class="btn btn-primary">Continue</button>
+  </div>
+<% end %>

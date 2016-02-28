@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tickets</title>
+    <%= tag :meta, charset: 'utf-8' %>
+    <%= tag :meta, 'http-equiv' => 'X-UA-Compatible', content: 'IE=edge,chrome=1' %>
+    <%= tag :meta, name: :viewport, content: "width=device-width, initial-scale=1.0" %>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+  </head>
+
+  <body>
+    <div>
+      <!--BEGIN BACK TO TOP-->
+      <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+      <!--END BACK TO TOP-->
+
+      <!--BEGIN TOPBAR-->
+      <div id="header-topbar-option-demo" class="page-header-topbar">
+        <nav id="topbar" role="navigation" style="margin-bottom: 0;" data-step="3" class="navbar navbar-default navbar-static-top">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <%= link_to root_path, class: 'navbar-brand', id: :logo do %>
+              <span class="fa fa-rocket"></span>
+              <span class="logo-text">Xaver</span>
+              <span style="display: none" class="logo-text-icon">µ</span>
+            <% end %>
+          </div>
+          <div class="topbar-main">
+            <%= link_to fa_icon(:bars), '#', class: 'hidden-xs', id: 'menu-toggle' %>
+          </div>
+        </nav>
+      </div>
+      <!--END TOPBAR-->
+
+      <div id="wrapper">
+        <!--BEGIN SIDEBAR MENU-->
+        <nav id="sidebar" role="navigation" class="navbar-default navbar-static-side">
+          <div class="sidebar-collapse menu-scroll">
+            <ul id="side-menu" class="nav">
+              <div class="clearfix"></div>
+              <li>
+                <%= link_to root_path do %>
+                  <%= fa_icon :tachometer, class: 'fa-fw' %>
+                  <span class="menu-title">Issues</span>
+                <% end  %>
+              </li>
+              <li>
+                <%= link_to new_issue_path do %>
+                  <%= fa_icon :th, class: 'fa-fw' %>
+                  <span class="menu-title">New issue</span>
+                <% end  %>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--END SIDEBAR MENU-->
+
+        <!--BEGIN PAGE WRAPPER-->
+        <div id="page-wrapper">
+          <%= yield %>
+          <!--BEGIN FOOTER-->
+          <div id="footer">
+            <div class="copyright">
+              <%= link_to '2016 © Xaver Soluciones + Tecnología', 'http://www.xaver.com.ar' %>
+            </div>
+          </div>
+          <!--END FOOTER-->
+        </div>
+        <!--END PAGE WRAPPER-->
+      </div>
+    </div>
+
+  </body>
+
+</html>

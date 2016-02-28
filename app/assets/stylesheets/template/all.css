@@ -1,0 +1,61 @@
+/* iCheck plugin skins
+----------------------------------- */
+@import url("template/minimal/all.css");
+/*
+@import url("template/minimal/minimal.css");
+@import url("template/minimal/red.css");
+@import url("template/minimal/green.css");
+@import url("template/minimal/blue.css");
+@import url("template/minimal/aero.css");
+@import url("template/minimal/grey.css");
+@import url("template/minimal/orange.css");
+@import url("template/minimal/yellow.css");
+@import url("template/minimal/pink.css");
+@import url("template/minimal/purple.css");
+*/
+
+@import url("template/square/all.css");
+/*
+@import url("template/square/square.css");
+@import url("template/square/red.css");
+@import url("template/square/green.css");
+@import url("template/square/blue.css");
+@import url("template/square/aero.css");
+@import url("template/square/grey.css");
+@import url("template/square/orange.css");
+@import url("template/square/yellow.css");
+@import url("template/square/pink.css");
+@import url("template/square/purple.css");
+*/
+
+@import url("template/flat/all.css");
+/*
+@import url("template/flat/flat.css");
+@import url("template/flat/red.css");
+@import url("template/flat/green.css");
+@import url("template/flat/blue.css");
+@import url("template/flat/aero.css");
+@import url("template/flat/grey.css");
+@import url("template/flat/orange.css");
+@import url("template/flat/yellow.css");
+@import url("template/flat/pink.css");
+@import url("template/flat/purple.css");
+*/
+
+@import url("template/line/all.css");
+/*
+@import url("template/line/line.css");
+@import url("template/line/red.css");
+@import url("template/line/green.css");
+@import url("template/line/blue.css");
+@import url("template/line/aero.css");
+@import url("template/line/grey.css");
+@import url("template/line/orange.css");
+@import url("template/line/yellow.css");
+@import url("template/line/pink.css");
+@import url("template/line/purple.css");
+*/
+
+@import url("template/polaris/polaris.css");
+
+@import url("template/futurico/futurico.css");

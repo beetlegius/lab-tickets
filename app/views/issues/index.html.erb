@@ -1,0 +1,28 @@
+<!--BEGIN TITLE & BREADCRUMB PAGE-->
+<div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+  <div class="page-header pull-left">
+    <div class="page-title">Issues console</div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!--END TITLE & BREADCRUMB PAGE-->
+
+<div id="flash"></div>
+
+<!--BEGIN CONTENT-->
+<div class="page-content">
+  <table id="issues" class="table table-hover">
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>Username</th>
+        <th>Age</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @issues %>
+    </tbody>
+  </table>
+</div>
+<!--END CONTENT-->
