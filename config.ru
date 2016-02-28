@@ -5,6 +5,5 @@ require ::File.expand_path('../config/environment', __FILE__)
 # Action Cable requires that all classes are loaded in advance
 Rails.application.eager_load!
 
-ActionCable.server.config.allowed_request_origins = ["http://tickets-console.xaver.com.ar"]
-
+run ActionCable.server
 run Rails.application
