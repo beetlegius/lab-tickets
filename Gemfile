@@ -55,3 +55,10 @@ gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 
 gem 'cancancan'
+
+# gem 'redis'
+
+gem 'capistrano'
+gem 'capistrano-rbenv'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
