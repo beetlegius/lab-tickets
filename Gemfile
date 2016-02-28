@@ -62,3 +62,5 @@ gem 'capistrano'
 gem 'capistrano-rbenv'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'
+
+gem 'unicorn'
